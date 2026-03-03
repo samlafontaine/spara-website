@@ -1,4 +1,5 @@
 import { ThemeToggle } from "@/components/theme-toggle";
+import { FloatingIcons } from "@/components/floating-icons";
 
 export default function Home() {
   return (
@@ -21,7 +22,8 @@ export default function Home() {
         </nav>
 
         {/* Hero */}
-        <section className="text-center mb-20 sm:mb-28">
+        <section className="relative text-center mb-20 sm:mb-28">
+          <FloatingIcons />
           <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-foreground">
             Your personal link library
           </h1>
