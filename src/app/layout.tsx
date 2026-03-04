@@ -41,7 +41,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="mx-auto max-w-2xl px-4 py-16 sm:py-24">
               {/* Nav */}
               <nav className="flex items-center justify-between mb-16 sm:mb-24">
-                <a href="/" className="text-sm font-semibold tracking-tight text-foreground hover:text-foreground/80 transition-colors">
+                <a href="/" className="flex items-center gap-2 text-lg font-semibold tracking-tight text-foreground hover:text-foreground/80 transition-colors">
+                  <img src="/logo.svg" alt="Spara logo" width={24} height={24} className="dark:invert" />
                   Spara
                 </a>
                 <div className="flex items-center gap-2">
