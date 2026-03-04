@@ -26,6 +26,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const year = new Date().getFullYear();
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
@@ -57,7 +59,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
               {/* Footer */}
               <footer className="border-t border-border pt-8 flex items-center justify-between text-xs text-muted-foreground">
-                <p>Built by Sam</p>
+                <p>
+                  © {year} · Built by{" "}
+                  <a
+                    href="https://samlafontaine.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-foreground transition-colors"
+                  >
+                    Sam
+                  </a>
+                </p>
                 <div className="flex items-center gap-4">
                   <a
                     href="/privacy"

@@ -68,7 +68,7 @@ export function FloatingIcons() {
         return (
           <div
             key={i}
-            className="absolute text-muted-foreground/20 animate-float"
+            className="absolute text-muted-foreground/15 dark:text-muted-foreground/50 animate-float"
             style={{
               top: p.top,
               left: p.left,

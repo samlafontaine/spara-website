@@ -1,4 +1,5 @@
 import { FloatingIcons } from "@/components/floating-icons";
+import { CtaButton } from "@/components/cta-button";
 
 export default function Home() {
   return (
@@ -14,12 +15,7 @@ export default function Home() {
           tags, and share your favorites.
         </p>
         <div className="mt-8">
-          <a
-            href="https://app.usespara.com"
-            className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 transition-colors"
-          >
-            Get started — it&apos;s free
-          </a>
+          <CtaButton />
         </div>
       </section>
 
